@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaz - PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/93bebd4c66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo2.png" class="logo">
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Maaz</span><br>Iftikhar From Pakistan</h1>
+            </div>
+        </div>
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#home"><i class="fas fa-home"></i> HOME</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> ABOUT ME</a></li>
+                <li><a href="#services"><i class="fas fa-cog"></i> SERVICES</a></li>
+                <li><a href="#portfolio"><i class="fas fa-image"></i> PORTFOLIO</a></li>
+                <li><a href="#contactus"><i class="fas fa-envelope"></i> CONTACT US</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+    </header>
+
+    <!-- New section for User.png -->
+    <section id="user-section">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_3125.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About ME section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a passionate and dedicated web developer with a strong foundation in creating dynamic and user-friendly websites. With several years of experience in the ever-evolving world of web development, I have honed my skills in front-end and back-end technologies, allowing me to bring ideas to life through code. My journey as a developer has been fueled by an insatiable curiosity and a commitment to staying at the forefront of industry trends and best practices.
+                        I take pride in crafting clean, efficient, and responsive websites that not only look great but also deliver exceptional user experiences. Whether it's building interactive web applications, optimizing site performance, or solving complex coding challenges, I thrive on turning concepts into reality in the digital realm. Collaboration and continuous learning are at the heart of my approach, and I am always eager to take on new projects that push the boundaries of what can be achieved on the web.
+                        As a web developer, I see each project as an opportunity to create something impactful and memorable, and I look forward to the exciting challenges that lie ahead.
+                    </p>
+            </div>
+        </div>
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+            <p class="tab-links"onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tag" id="skills">
+        <ul>
+            <li><span> *UI/UX </span><br> Designing Web/App Interfaces</li>
+            <li><span> *Web Development </span><br> Web app Developer</li>
+            <li><span> *App Development </span><br> Building Andriod/Ios Apps</li>
+        </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span> *2013-current </span><br> UI/UX Training at ConceptOne </li>
+                <li><span> *2021-2023 </span><br> Team Lead Starcom</li>
+                <li><span> *2022-2023 </span><br> UI/UX Executive Co. Digital Ltd.</li>
+                <li><span> *2022-2023 </span><br> Internship at CodSoft</li>
+            </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span> *2013</span><br> ConceptOne</li>
+                    <li><span> *2017</span><br> Matriculation from Minaret Model</li>
+                    <li><span> *2019</span><br> Intermediate from Islamia </li>
+                    <li><span> *2024</span><br> BSCS from SSUET</li>
+                </ul>
+                </div>
+        </div>
+    </section>
+    <!--- Service -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design is the art of creating visually appealing and user-friendly websites. It combines aesthetics and functionality to enhance online experiences, making it a critical aspect of the digital world.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>UI/UX design focuses on crafting user interfaces and experiences that are intuitive, engaging, and seamless. User Interface (UI) design deals with the look and feel of a digital product, User Experience (UX) design focuses on the overall user journey, making sure interactions are efficient and satisfying. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>App design is the process of conceptualizing and creating user-friendly and visually appealing mobile applications. It involves designing every aspect of the app, from its layout and functionality to its colors and typography.</p>
+                <a href="#">Learn more</a>
+            </div>
+            </div>
+        </div>
+    </div>
+   <!-------- PORTFOLIO ----->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>A social media app is a digital platform that enables users to connect and interact with others through the internet. These apps allow individuals to create personal profiles, share content, and engage in conversations with friends, family.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>A music app is a digital platform designed for streaming and enjoying music content. These apps provide users with access to an extensive library of songs, albums, playlists, and podcasts.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/work-3.png">
+                <div class="layer">
+                    <h3>E-Commerce App</h3>
+                    <p>An e-commerce app is a digital storefront that allows businesses to sell products or services directly to consumers through mobile devices.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+   </div>
+
+   <!------- Contact ------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>01215355335</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/images/Maaz CV .pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Maaz Iftikhar.<i class="fa-sharp fa-solid fa-bolt"></i> 2023 </p>
+    </div>
+   </div>
+    
+    <script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tag"); // Change tabcontents to tabcontent
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tag"); // Change active-tab to active-tag
+}
+    </script>
+
+    <script>
+        var sidemenu =document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0"
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px"
+        }
+
+    </script>
+</body>
+</html>
